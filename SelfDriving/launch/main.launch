@@ -1,0 +1,17 @@
+<launch>
+    <!--   發布話題  -->
+    <node
+        output="screen"
+        name="PublishTopic"
+        pkg="SelfDriving"
+        type="PublishTopic.py"
+    />
+
+    <!--   rviz   -->
+    <node
+        name="rviz"
+        pkg="rviz"
+        type="rviz"
+    />
+
+</launch>
